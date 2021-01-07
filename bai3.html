@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số");
+    console.log(isFibonacci(a));
+
+    function isFibonacci(num) {
+        let b = 0;
+        let c = 1;
+        let d;
+        for (let i = 0; i <= num; i++) {
+            d = b + c;
+            b = c;
+            c = d;
+            if (num == d || num ==0) {
+                return num+ " thuộc dãy Fibonacci";
+            }
+        }
+        return num + "Không thuộc dãy Fibonacci";
+    }
+</script>
+</body>
+
+</html>
